@@ -1,3 +1,3 @@
-## Refer this link for this use cases:
+## Terraform Project includes following use-cases:
 
-# https://dev.to/aws-builders/how-to-deploy-a-serverless-website-with-terraform-5677
+`` version-1: website host in publicly hosted s3 bucket``
