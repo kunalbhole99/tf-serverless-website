@@ -1,3 +1,9 @@
 variable "domain_name_simple" {
-  default = "thecloudworld.com"
+  type = string
+  default = "wearecloudengineer.monster"
+}
+
+
+variable "region" {
+  default = "ap-south-1"
 }

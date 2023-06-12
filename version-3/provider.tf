@@ -4,7 +4,7 @@ terraform {
   required_providers {
     aws = {
       source  = "registry.terraform.io/hashicorp/aws"
-      version = "4.65.0"
+      version = "4.65.0" 
     }
   }
 
@@ -16,13 +16,30 @@ terraform {
 }
 
 
+################# provider for mumbai region ################
+
 provider "aws" {
   region = "ap-south-1"
+  
   default_tags {
     tags = {
-      project = "serverless-demo",
+      project = "web-hosting",
       type    = "web",
       iac     = "terraform"
     }
- }
+  }
+}
+
+################# provider for north-virginia region ################
+
+provider "aws" {
+  alias = "north_virginia"
+  region = "us-east-1"
+   default_tags {
+    tags = {
+      project = "web-hosting",
+      type    = "web",
+      iac     = "terraform"
+    }
+  }
 }
